@@ -8,7 +8,8 @@
 
    ->  Asymptotic doesn’t work well with for small input sizes, and therefore $n_0$ would be ignored. 
 
-   ->  The asymptotic analysis does not provide an exact running time.
+   ->  Asymptotic analysis provides an upper bound that is less than or equal to the worst-case limit, which can be misleading.
+
 
 
 - Suppose finding a particular element in a binary search tree with 1,000
@@ -34,7 +35,7 @@
   
   -> The algorithm’s efficiency can be slow if it is not coded in the most efficient way. It could be due to using wrong data structures, coding in a complex way, unbalanced tree or it could be the input data being used.
   
-  -> The hardware and software platform could be slow. The hardware and software platform on which the algorithm is running can also have a significant impact on its performance.  Such as the CPU speed or the operating performance. 
+  -> The hardware and software platform could be slow, and larger input sizes can have a more significant impact on its performance compared to smaller inputs. This is because larger inputs demand more computational resources, including memory, processing power, and storage. With increased data volume, the algorithm must efficiently manage these resources. Smaller inputs may not impose such that allowing for faster execution. Additionally, the specific hardware, such as CPU speed, and the overall operating performance of the system can further affect algorithm execution times.
 
 
 Add your answers to this markdown file.
