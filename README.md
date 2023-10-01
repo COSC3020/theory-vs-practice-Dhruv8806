@@ -4,13 +4,49 @@
 - List 3 reasons why asymptotic analysis may be misleading with respect to
   actual performance in practice.
 
+   ->  It ignores constants that can be significant. 
+
+   ->  Asymptotic doesn’t work well with for small input sizes, and therefore $n_0$ would be ignored. 
+
+   ->  Asymptotic analysis provides an upper bound that is less than or equal to the worst-case limit, which can be misleading.
+
+
+
 - Suppose finding a particular element in a binary search tree with 1,000
   elements takes 5 seconds. Given what you know about the asymptotic complexity
   of search in a binary search tree, how long would you guess finding the same
   element in a search tree with 10,000 elements takes? Explain your reasoning.
 
+  -> Given that finding a particular element in a binary search tree with 1,000 elements takes 5 seconds, we can estimate the running time of finding the same element in 
+ a search tree with 10,000 elements as follows:
+
+    T(10000) = $\frac{5*log(10000)}{log(1000)}$
+
+    T(10000) = 6.667 seconds
+
+  -> Therefore, we could estimate that finding a particular element in a binary search tree with 10,000 elements would take about 6.67 seconds.
+
+
 - You measure the time with 10,000 elements and it takes 100 seconds! List 3
   reasons why this could be the case, given that reasoning with the asymptotic
   complexity suggests a different time.
 
+  -> The amount of input memory available can affect the performance of an algorithm. If the input data is too large to fit in memory, the algorithm will need to access the hard drive to read and write data, which can slow it down.
+  
+  -> The algorithm’s efficiency can be slow if it is not coded in the most efficient way. It could be due to using wrong data structures, coding in a complex way, unbalanced tree or it could be the input data being used.
+  
+  -> The hardware and software platform could be slow, and larger input sizes can have a more significant impact on its performance compared to smaller inputs. This is because larger inputs demand more computational resources, including memory, processing power, and storage. With increased data volume, the algorithm must efficiently manage these resources. Smaller inputs may not impose such that allowing for faster execution. Additionally, the specific hardware, such as CPU speed, and the overall operating performance of the system can further affect algorithm execution times.
+
+
 Add your answers to this markdown file.
+
+
+  -> Sources used: 
+  
+     - Discussed with TA in lab time
+     
+     - https://www.geeksforgeeks.org/asymptotic-notation-and-analysis-based-on-input-size-of-algorithms/
+     
+     - https://en.wikipedia.org/wiki/Algorithmic_efficiency
+     
+     - https://www.khanacademy.org/computing/computer-science/algorithms/binary-search/a/running-time-of-binary-search
